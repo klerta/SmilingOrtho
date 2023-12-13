@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #444444;
+  background-color: #f8f9fa; /* Neutral background color */
+}
+
+a,
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Section styling */
+.shop_section {
+  text-align: center; /* Centers the content */
+  padding: 80px 0;
+}
+
+.shop_section .heading_container h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 50px; /* Adds space below the heading */
+}
+
+/* Box styling */
+.shop_section .box {
+  background-color: #ffffff; /* Card background color */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Adds shadow for depth */
+  border-radius: 10px; /* Rounded corners for the card */
+  overflow: hidden; /* Ensures content fits in the rounded corners */
+  margin-top: 30px; /* Adds space between the cards */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover */
+}
+
+.shop_section .box:hover {
+  transform: translateY(-5px); /* Slight lift effect on hover */
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+/* Image box styling */
+.shop_section .box .img-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+.shop_section .box .img-box img {
+  max-width: 100%;
+  max-height: 200px; /* Adjusted max-height for better image fit */
+}
+
+/* Detail box styling */
+.shop_section .box .detail-box {
+  padding: 10px 15px;
+  background-color: #f2f2f2; /* Slightly different background for contrast */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.shop_section .box .detail-box h6 {
+  margin: 0;
+  color: #333;
+  font-size: 1rem; /* Increased font size for better readability */
+}
+
+.shop_section .box .detail-box h6 span {
+  font-weight: 500;
+  color: #fe302f; /* Highlight color for price */
+}
+
+/* New badge styling */
+.shop_section .box .new {
+  position: absolute;
+  top: -10px; /* Adjusted for better visibility */
+  right: -10px;
+  background-color: #fe302f; /* Badge background color */
+  color: #ffffff;
+  padding: 5px 10px;
+  border-radius: 50px; /* More pronounced rounded corners */
+  font-size: 0.85rem;
+}
+
+/* Button box styling */
+.shop_section .btn-box {
+  margin-top: 45px;
+}
+
+.shop_section .btn-box a {
+  font-size: 1rem;
+  color: #ffffff;
+  background-color: #fe302f; /* Button background color */
+  padding: 10px 40px;
+  border-radius: 25px; /* Rounded corners for the button */
+  transition: background-color 0.3s; /* Transition for hover effect */
+}
+
+.shop_section .btn-box a:hover {
+  background-color: #e02d2b; /* Slightly darker on hover */
+}
