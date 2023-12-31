@@ -7,6 +7,8 @@ const AboutUs = () => {
   return (
     <div className="container">
       <div className="section-title">
+        <br></br>
+        <br></br>
         <h2>{t("WHY CHOOSE US ?")}</h2>
         <p>
           {t(
