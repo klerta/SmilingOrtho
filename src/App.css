@@ -1012,49 +1012,6 @@ section {
 /*--------------------------------------------------------------
 # Counts
 --------------------------------------------------------------*/
-.icon-box {
-  display: inline-block;
-  position: relative;
-}
-
-.image-border {
-  width: 120px; /* Set your desired width (including spacing) */
-  height: 120px; /* Set your desired height (including spacing) */
-  border: 2px solid #026080; /* Outer border color and width */
-  border-radius: 50%; /* Outer circular border */
-  overflow: hidden;
-  position: relative;
-}
-
-.inner-border {
-  position: absolute;
-  top: 5px; /* Adjust the spacing from the top */
-  left: 5px; /* Adjust the spacing from the left */
-  width: calc(100% - 10px); /* Adjust the width to account for the spacing */
-  height: calc(100% - 10px); /* Adjust the height to account for the spacing */
-  border: 2px solid #026080; /* Inner border color and width */
-  border-radius: 50%; /* Inner circular border */
-  box-sizing: border-box; /* Include border width in the element's dimensions */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.inner-border img {
-  display: block;
-  max-width: 70%; /* Ensure the image fits within the container */
-  max-height: 70%; /* Ensure the image fits within the container */
-}
-
-.feature-title {
-  color: #026080;
-  font-weight: bold;
-}
-.features .icon-box {
-  background-color: #cadbdb;
-  border-radius: 20px;
-}
-
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
@@ -2148,5 +2105,88 @@ border-radius: 20px;
   .img {
     width: 100%; /* Ensures the image takes up full width. Ensure your image aspect ratio looks good at this size */
     height: auto; /* Maintain image aspect ratio */
+  }
+}
+
+
+
+
+
+
+.features-container {
+  background-color: #cadbdb;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.feature-box {
+  overflow: hidden;
+  height: 100%;
+  margin-bottom: 20px; /* Adjust the margin to increase spacing between feature boxes */
+}
+
+.feature-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px; /* Add padding to increase spacing between all elements in the feature box */
+}
+
+.outer-circle {
+  width: 80px;
+  height: 80px;
+  border: 2px solid #026080;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0; /* Add margin to increase spacing between the outer circle and other elements */
+}
+
+.inner-circle {
+  border: 2px solid #026080;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.feature-image {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.feature-title {
+  color: #026080;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  margin-top: 10px; /* Add margin to increase spacing between title and circle */
+}
+
+.feature-description {
+  font-size: 0.8rem;
+  width: 80%;
+  margin-top: 10px; /* Add margin to increase spacing between circle and description */
+}
+
+@media (max-width: 768px) {
+  /* Media query for screens smaller than 768px (e.g., mobile screens) */
+  .feature-box {
+    width: 100%; /* Make the feature boxes take the full width of the screen */
+    margin-right: 20px; /* Add margin between feature boxes for better spacing */
+  }
+  .features-container {
+    background-color: #cadbdb;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 0 auto;
+      width: 90%;
+
   }
 }
