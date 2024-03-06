@@ -64,6 +64,7 @@ a:hover {
 
 .shop_section .box .detail-box h6 {
   margin: 0;
+  margin-right: 10px;
   color: #333;
   font-size: 1rem; /* Increased font size for better readability */
 }

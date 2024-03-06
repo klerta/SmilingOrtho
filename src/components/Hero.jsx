@@ -21,9 +21,8 @@ const Carousel = () => {
           >
             <img
               src={item.imageUrl}
-              className="d-block w-100"
+              className="d-block w-100 testWiem"
               alt="Carousel"
-              style={{ objectFit: "cover", height: "550px" }}
             />
           </div>
         ))}

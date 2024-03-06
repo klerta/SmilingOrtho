@@ -3,7 +3,16 @@
 .App {
   text-align: center;
 }
-
+.testWiem{
+  height : 550px ;
+  object-fit: cover;
+}
+@media (max-width: 992px){
+  .testWiem{
+    height : 400px ;
+    object-fit: cover;
+  }
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;

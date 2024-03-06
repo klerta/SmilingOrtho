@@ -90,12 +90,9 @@ export default function Product() {
                   <div className="img-box">
                     <img src={product.image} alt={product.name} />
                   </div>
-                  <div className="detail-box">
-                    <h6>{product.name}</h6>
-                    <h6>
-                    { t('price', { price: product.price.toFixed(2) }) }
-
-                    </h6>
+                  <div className="detail-box" >
+                    <h6 stye>{product.name}</h6>
+                   
                   </div>
                   
                 </a>

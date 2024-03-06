@@ -137,10 +137,11 @@ const Navbar = () => {
                 color: "#FFF",
                 border: "none",
               }}
-            >
+            > 
+             <option value="fr">{t("French")}</option>
               <option value="ar">{t("Arabic")}</option>
               <option value="en">{t("English")}</option>
-              <option value="fr">{t("French")}</option>
+            
             </select>
           </div>
         </div>
